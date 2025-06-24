@@ -12,7 +12,7 @@ def project(request):
     return render(request, "home/project.html")
 
 def contact(request):
-    if request.nethod "POST":
+    if request.method == "POST":
         name = request.POST['name']
         email = request.POST['email']
         phone = request.POST['phone']
