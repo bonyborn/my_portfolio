@@ -16,9 +16,9 @@ def contact(request):
         name = request.POST['name']
         email = request.POST['email']
         phone = request.POST['phone']
-        desc = request.POST['dsc']
+        concern = request.POST['concern']
     #print(name, email, phone, desc)
-    ins = Contact (name=name, email=email, phone=phone, desc=desc)
+    ins = Contact (name=name, email=email, phone=phone, concern=concern)
     ins.save()
     print("The data has been weitten to the db")
 
