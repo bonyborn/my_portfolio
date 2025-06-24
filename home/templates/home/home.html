@@ -60,13 +60,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">        
-       <img src="{% static 'home/slide1.jpeg' %}" alt="slide1>                            
+      <img src="{% static 'home/slide1.jpeg' %}" class="d-block w-100" alt="slide1">
     </div>
     <div class="carousel-item">
-      <img src="https://source.unsplash.com/500x400/?programmer,code" class="d-block w-100" alt="slide2">
+      <img src="{% static 'home/slide2.jpg' %}" class="d-block w-100" alt="slide2">
     </div>
     <div class="carousel-item">
-      <img src="https://source.unsplash.com/900x400/?dancer" class="d-block w-100" alt="slide3">
+      <img src="{% static 'home/slide3.jpeg' %}" class="d-block w-100" alt="slide3">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -82,7 +82,7 @@
   <h6 class="text-center">Me at a glance</h6>
         <div class="card-deck">
   <div class="card">
-    <img src="https://source.unsplash.com/400x300/?Developer" class="card-img-top" alt="Developer">
+      <img src="{% static 'home/python.jpeg' %}" class="card-img-top" alt="Developer">
     <div class="card-body">
       <h5 class="card-title">Developer</h5>
       <p class="card-text">Building web applications and solving real-world problems.</p>
@@ -90,7 +90,7 @@
     </div>
   </div>
   <div class="card">
-    <img src="https://source.unsplash.com/400x300/?painter" class="card-img-top" alt="Painter">
+      <img src="{% static 'home/slide2.jpg' %}" class="card-img-top" alt="Painter">
     <div class="card-body">
       <h5 class="card-title">Painter</h5>
       <p class="card-text">Turning emotions into visual masterpieces.</p>
@@ -98,7 +98,7 @@
     </div>
   </div>
   <div class="card">
-    <img src="https://source.unsplash.com/400x300/?Dancer" class="card-img-top" alt="Dancer">
+          <img src="{% static 'home/slide3.jpeg' %}" class="card-img-top" alt="Dancer">
     <div class="card-body">
       <h5 class="card-title">Dancer</h5>
       <p class="card-text">Expressing creativity through movement and rhythm.</p>
@@ -110,6 +110,7 @@
     </div>
   </div>
 </div>
+
     <footer class="text-center text-light bg-dark mt-0">copyright &copy BonyBorn | All rights reserved</footer> 
 
     <!-- Optional JavaScript -->
