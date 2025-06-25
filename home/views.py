@@ -18,8 +18,8 @@ def contact(request):
         phone = request.POST['phone']
         concern = request.POST['concern']
     #print(name, email, phone, desc)
-    ins = Contact (name=name, email=email, phone=phone, concern=concern)
-    ins.save()
+    contact = contact (name=name, email=email, phone=phone, concern=concern)
+    contact.save()
     print("The data has been weitten to the db")
 
     return render(request, "home/contact.html")
