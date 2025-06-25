@@ -13,14 +13,17 @@ def project(request):
 
 def contact(request):
     if request.method == "POST":
-        name = request.POST['name']
-        email = request.POST['email']
-        phone = request.POST['phone']
-        concern = request.POST['concern']
-    #print(name, email, phone, desc)
-    contact = contact (name=name, email=email, phone=phone, concern=concern)
-    contact.save()
-    print("The data has been weitten to the db")
+        FullName = request.POST['Full Name']
+        Email = request.POST['Email']
+        YourMessage = request.POST['Your Message']
+        # Use your Contact model from models, not a function named contact
+        contact_obj = models.Contact(
+            FullName=FullName,
+            Email=Email,
+            YourMessage=YourMessage
+        )
+        contact_obj.save()
+        print("The data has been written to the db")
 
     return render(request, "home/contact.html")
 
