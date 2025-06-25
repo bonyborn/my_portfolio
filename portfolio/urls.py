@@ -20,10 +20,6 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-admin.site.header="Developer Bony Born"
-admin.site.site_title="Welcome to Bony's Dashboard"
-admin.site.index_title="Welcome to this Portal"
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('home.urls')),
