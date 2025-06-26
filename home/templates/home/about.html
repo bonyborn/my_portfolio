@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{% load static %}
+{% block aboutactive %}active{% endblock aboutactive %}
+<title>{% block title %}About{% endblock title %}</title>
 
-<title>{% block title %} About {% endblock title %}</title>
+  .{% load static %}
   {% block body %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Developer Bony</a>
