@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{% load static %}
+
+
+  {% block homeactive %}active{% endblock homeactive %}
+  <title>{% block title %} Home {% endblock title %}</title>
+  {% load static %}
+  {% block body %}
 
   <div class="alert alert-success alert-dismissible fade show my-0" role="alert">
   <strong>Hey Visitor!</strong> I'm looking for a full-time job.Feel free to contact me if you like my profile.
@@ -9,9 +14,6 @@
     <span aria-hidden="true">&times;</span>
   </button>
   </div>
-
-  <title>{% block title %} Home {% endblock title %}</title>
-  {% block body %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Developer Bony</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
