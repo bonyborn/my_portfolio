@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% block homeactive %}active{% endblock homeactive %}
+ <title>{% block title %}Home{% endblock title %}</title>
 
-
-  {% block homeactive %}active{% endblock homeactive %}
-  <title>{% block title %} Home {% endblock title %}</title>
   {% load static %}
   {% block body %}
 
