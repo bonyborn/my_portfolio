@@ -4,8 +4,8 @@ from .import views
 
 
 admin.site.site_header="Developer Bony Born's Administration"
-admin.site.site_title="Welcome to Bony's Dashboard"
-admin.site.index_title="Welcome to this Portal"
+admin.site.site_title="Adm B.B™"
+admin.site.index_title="Admin BonyBorn"
 
 urlpatterns=[
     path("", views.home, name="home"),
