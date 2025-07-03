@@ -3,13 +3,13 @@ from home import models
 
 # Create your views here.
 def home(request):
-    return render(request, "home/home.html")
+    return render(request, "home.html")
 
 def about(request):
-    return render(request, "home/about.html")
+    return render(request, "about.html")
 
 def project(request):
-    return render(request, "home/project.html")
+    return render(request, "project.html")
 
 def contact(request):
     if request.method == "POST":
@@ -25,5 +25,5 @@ def contact(request):
         contact_obj.save()
         print("The data has been written to the db")
 
-    return render(request, "home/contact.html")
+    return render(request, "contact.html")
 
